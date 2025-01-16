@@ -15,7 +15,7 @@ export class CityListComponent {
       {
         coordinates: '012345',
         title: 'Brandenburger Tor',
-        img: 'https:www',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Brandenburger_Tor_abends.jpg',
         description: "This is a text about the 'Brandenburg gate'.",
         openingHours: 'Mo-Fr: 9am - 6pm',
         funFact: "Don't add paint!",
@@ -28,7 +28,7 @@ export class CityListComponent {
       {
         coordinates: '123456',
         title: 'Reichstag',
-        img: 'https:www',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8j9go-AlnNdIHvlxpdbRap_J-h6Ddd-NqQ&s',
         description: "This is a text about the 'Reichstag'.",
         openingHours: 'Mo-Fr: 9am - 6pm',
         funFact: 'Main Station Circus',
@@ -41,7 +41,7 @@ export class CityListComponent {
       {
         coordinates: '234567',
         title: 'Brücke',
-        img: 'https:www',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Oberbaumbr%C3%BCcke_mit_U-Bahn.jpg',
         description: 'This is a text about the famous bridge.',
         funFact: "Don't fall",
         themes: ['Romantic'],
@@ -53,7 +53,7 @@ export class CityListComponent {
       {
         coordinates: '345678',
         title: 'Museumsinsel',
-        img: 'https:www',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjDQJI95WZvB75vznIzawarE8Q8soCO5cetA&s',
         description: "This is a text about the 'Museumsinsel'.",
         openingHours: 'Mo-Fr: 9am - 6pm',
         funFact: 'Nice things to see.',
@@ -66,7 +66,7 @@ export class CityListComponent {
       {
         coordinates: '4567897',
         title: 'Garten',
-        img: 'https:www',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2006-07-07_Botanischer_Garten_Italienischer_Garten.jpg/800px-2006-07-07_Botanischer_Garten_Italienischer_Garten.jpg',
         description: 'This is a text about the famous garden.',
         funFact: 'Relax',
         themes: ['Romantic'],

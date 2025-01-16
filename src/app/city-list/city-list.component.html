@@ -1,1 +1,22 @@
-<p>city-list works!</p>
+<h1>Sights</h1>
+<ul class="city-list">
+  <li *ngFor="let sight of sights">
+    <div class="list-item">
+      <img *ngIf="sight.img" [src]="sight.img" alt="sight" />
+      <h2>{{ sight.title }}</h2>
+      <p>{{ sight.description }}</p>
+      <p role="opening-hours" *ngIf="sight.openingHours">
+        {{ sight.openingHours }}
+      </p>
+      <p role="fun-fact" *ngIf="sight.funFact">
+        {{ sight.funFact }}
+      </p>
+      <p role="themes" *ngIf="sight.themes">
+        {{ sight.themes }}
+      </p>
+      <button role="fav" *ngIf="sight.fav">
+        {{ sight.fav }}
+      </button>
+    </div>
+  </li>
+</ul>
