@@ -30,6 +30,11 @@ module.exports = tseslint.config(
           style: "kebab-case",
         },
       ],
+      "@typescript-eslint/quotes": [
+        "error",
+        "single",
+        { allowTemplateLiterals: true },
+      ],
     },
   },
   {
