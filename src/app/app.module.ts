@@ -3,16 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CityListComponent } from './city-list/city-list.component';
+import { CityListItemComponent } from './city-list-item/city-list-item.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CityListComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, CityListComponent, CityListItemComponent],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

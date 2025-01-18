@@ -1,0 +1,17 @@
+<div *ngIf="sight" class="list-item">
+  <img *ngIf="sight.img" [src]="sight.img" alt="sight" />
+  <h2>{{ sight.title }}</h2>
+  <p>{{ sight.description }}</p>
+  <p role="opening-hours" *ngIf="sight.openingHours">
+    {{ sight.openingHours }}
+  </p>
+  <p role="fun-fact" *ngIf="sight.funFact">
+    {{ sight.funFact }}
+  </p>
+  <p role="themes" *ngIf="sight.themes">
+    {{ sight.themes }}
+  </p>
+  <button role="fav" *ngIf="sight.fav">
+    {{ sight.fav }}
+  </button>
+</div>
