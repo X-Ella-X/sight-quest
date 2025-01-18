@@ -6,13 +6,13 @@
       <h2>{{ sight.title }}</h2>
       <p>{{ sight.description }}</p>
       <p role="opening-hours" *ngIf="sight.openingHours">
-        {{ sight.openingHours }}
+        {{ sight?.openingHours }}
       </p>
       <p role="fun-fact" *ngIf="sight.funFact">
-        {{ sight.funFact }}
+        {{ sight?.funFact }}
       </p>
       <p role="themes" *ngIf="sight.themes">
-        {{ sight.themes }}
+        {{ sight?.themes }}
       </p>
       <button role="fav" *ngIf="sight.fav">
         {{ sight.fav }}
