@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
-import { Sight } from '../city/sight';
+import { Sight } from '../shared/sight';
 
 @Component({
   selector: 'bm-city-list',
@@ -9,6 +9,7 @@ import { Sight } from '../city/sight';
 })
 export class CityListComponent {
   sights: Sight[] = [];
+  @Output() selectSight = new EventEmitter<Sight>();
 
   constructor() {
     this.sights = [
@@ -76,5 +77,8 @@ export class CityListComponent {
         aestheticLocation: true,
       },
     ];
+  }
+  doSelect(sight: Sight) {
+    this.selectSight.emit(sight);
   }
 }

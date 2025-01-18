@@ -1,3 +1,11 @@
 <main>
-  <bm-city-list></bm-city-list>
+  <bm-city-list
+    *ngIf="!sight"
+    (selectSight)="showDetails($event)"
+  ></bm-city-list>
+  <bm-sight-details
+    *ngIf="sight"
+    (leave)="showList()"
+    [sight]="sight"
+  ></bm-sight-details>
 </main>

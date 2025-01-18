@@ -1,6 +1,9 @@
 <h1>Sights</h1>
 <ul class="city-list">
   <li *ngFor="let sight of sights">
-    <bm-city-list-item [sight]="sight"></bm-city-list-item>
+    <bm-city-list-item
+      [sight]="sight"
+      (click)="doSelect(sight)"
+    ></bm-city-list-item>
   </li>
 </ul>
