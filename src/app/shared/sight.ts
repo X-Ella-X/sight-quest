@@ -1,5 +1,6 @@
 export interface Sight {
   coordinates: string;
+  id?: string;
   title: string;
   img: string;
   description: string;
