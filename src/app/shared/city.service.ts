@@ -78,4 +78,8 @@ export class CityService {
   getAll(): Sight[] {
     return this.sights;
   }
+
+  getSingle(title: string): Sight | undefined {
+    return this.sights.find((sight) => sight.title === title);
+  }
 }

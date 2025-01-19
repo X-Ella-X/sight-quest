@@ -1,4 +1,6 @@
-<div *ngIf="sight" class="list-item">
-  <img *ngIf="sight.img" [src]="sight.img" alt="sight" />
-  <h3>{{ sight.title }}</h3>
-</div>
+<a *ngIf="sight" [routerLink]="sight.title" class="list-item">
+  <div *ngIf="sight" class="list-item">
+    <img *ngIf="sight.img" [src]="sight.img" alt="sight" />
+    <h3>{{ sight.title }}</h3>
+  </div>
+</a>

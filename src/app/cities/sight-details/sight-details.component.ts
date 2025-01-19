@@ -1,5 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Sight } from '../../shared/sight';
+import { CityService } from 'src/app/shared/city.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'bm-sight-details',
@@ -7,10 +9,12 @@ import { Sight } from '../../shared/sight';
   styleUrls: ['./sight-details.component.css'],
 })
 export class SightDetailsComponent {
-  @Input() sight?: Sight;
-  @Output() leave = new EventEmitter<void>();
-
-  doLeave() {
-    this.leave.emit();
+  sight?: Sight;
+  constructor(
+    private service: CityService,
+    private route: ActivatedRoute,
+  ) {
+    const title = this.route.snapshot.paramMap.get('title')!;
+    this.sight = this.service.getSingle(title);
   }
 }

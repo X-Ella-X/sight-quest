@@ -12,7 +12,6 @@ import { SightDetailsComponent } from './sight-details/sight-details.component';
     CityListItemComponent,
     SightDetailsComponent,
   ],
-  imports: [CommonModule, CitiesRoutingModule],
-  exports: [CityListComponent, SightDetailsComponent],
+  imports: [CommonModule, CitiesRoutingModule, CitiesRoutingModule],
 })
 export class CitiesModule {}

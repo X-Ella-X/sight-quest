@@ -1,11 +1,11 @@
+<nav>
+  <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >Home</a
+  >
+  <a routerLink="/sights" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >Sights</a
+  >
+</nav>
 <main>
-  <bm-city-list
-    *ngIf="!sight"
-    (selectSight)="showDetails($event)"
-  ></bm-city-list>
-  <bm-sight-details
-    *ngIf="sight"
-    (leave)="showList()"
-    [sight]="sight"
-  ></bm-sight-details>
+  <router-outlet></router-outlet>
 </main>
