@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
-import { Sight } from '../shared/sight';
+import { Sight } from '../../shared/sight';
 
 @Component({
   selector: 'bm-city-list',
